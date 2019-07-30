@@ -426,7 +426,7 @@ All the modes can be applied to all dependencies, or to individual ones:
 
     mypkg/1.3.4@user/testing#RREV1:73b..fa56#PREV1  => mypkg/1.3.4-a4+b3@user/testing#RREV1 
 
-  .. code-block:: python
+ .. code-block:: python
 
       def package_id(self):
           self.info.requires["mypkg"].recipe_revision_mode()
@@ -443,7 +443,7 @@ All the modes can be applied to all dependencies, or to individual ones:
     # The full reference of the dependency package binary will be used as-is
     mypkg/1.3.4@user/testing#RREV1:73b..fa56#PREV1  => mypkg/1.3.4@user/testing#RREV1:73b..fa56#PREV1 
 
-  .. code-block:: python
+ .. code-block:: python
 
       def package_id(self):
           self.info.requires["mypkg"].package_revision_mode()
